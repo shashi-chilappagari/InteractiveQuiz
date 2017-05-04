@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<title>Shashi's Interactive Quiz</title>
+		<link href="style.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+		<script src="main.js"></script>
+	</head>
+	<body>
+		<h1> This is my first attempt at an interactive quiz</h1>
+
+		<form id = "quiz" name = "quiz">
+
+			<p>What is the Latin name for Sodium?</p>
+			<input id= "textbox" type="text" name="question1">
+			<input id="hint_button" type="button" value="Give me a hint, please" onclick="givehint()";>
+			<div id="hint_block">
+				<p id="hint"></p>
+			</div>
+			<p>What is the Latin name for Potassium?</p>
+			<input id= "mult_choice" type="radio" name="question2" value="Kalium">Kalium<br>
+			<input id= "mult_choice" type="radio" name="question2" value="Aurum">Aurum<br>
+			<input id= "mult_choice" type="radio" name="question2" value="Wolfram">Wolfram<br>
+			<input id= "mult_choice" type="radio" name="question2" value="Argentum">Argentum<br>
+			<input id="hint_button" type="button" value="Give me a hint, please" onclick="givehint()";>
+		
+			<p>What is the Latin name for Gold?</p>
+			<input id= "mult_choice" type="radio" name="question3" value="Kalium">Kalium<br>
+			<input id= "mult_choice" type="radio" name="question3" value="Aurum">Aurum<br>
+			<input id= "mult_choice" type="radio" name="question3" value="Wolfram">Wolfram<br>
+			<input id= "mult_choice" type="radio" name="question3" value="Argentum">Argentum<br>
+
+			<input id="submit_button" type="button" value="I'm done" onclick="check()";>
+		</form>
+
+		<div id="after_submit">
+			<p id="message"></p>
+			<p id="number_correct"></p>
+			<img id="picture">
+		</div>
+
+	</body>	
+
+
+</html>
